@@ -585,6 +585,10 @@ form.contact_form {
 .footer-info {
   margin-top: 50px;
 }
+.footer-info p {
+  word-wrap: break-word;
+  word-break: break-word;
+}
 .footer-info h4 {
   color: #eee;
   padding: 20px 0;
@@ -905,6 +909,9 @@ ul.social li a.youtube:hover {
   .footer-info-grid {
     width: 25%;
     float: left;
+  }
+  .footer-info p {
+    word-break: break-word;
   }
   .footer-info li {
     font-size: 12px;

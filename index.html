@@ -527,31 +527,21 @@
             </address>
           </div>
           <div class="col-md-3 footer-info-grid address">
-            <h4>BANK ACCOUNT(HONG KONG)</h4>
+            <h4>REGISTER ADDRESS</h4>
             <p>
-              BENEFICIARY NAME:SINO OCEAN INTL LOGISTICS LIMITED<br />
-              ACCOUT NUMBER:788519540 (USD/EUR)<br />
-              SWIFT CODE:DHBKHKHH<br />
-              BANK NAME:DBS BANK (HONG KONG) LIMITED<br />
-              BENEFICIARY ADD:RM1103 HANG SENG MANGKOK BLDG 677 NATHAN RD
-              MANGKOK KLN HONGKONG;<br />
-              BANK ADDRESS:16TH FLOOR, THE CENTRE, 99 QUEEN'S ROAD CENTRAL,
-              CENTRAL, HONG KONG<br />
-              BANK CODE:016 <br />
-              BRANCH CODE:478<br />
+              Room 1718 , Building No. 5 ,<br />
+              Wanda Square , Houjie Town ,<br />
+              Dongguan City , Guangdong Province ,<br />
+              China <br />
             </p>
           </div>
           <div class="col-md-3 footer-info-grid email">
-            <h4>BANK ACCOUNT(CHINA MAINLAND)</h4>
+            <h4>VISIT ADDRESS</h4>
             <p>
-              BENEFICIARY NAME :SINO GREAT INTL LOGISTICS LTD . <br />
-              ACCOUNT NUMBER :6275 6786 0661 (USD) <br />
-              BENEFICIARY ADD :RM 1718, FLOOR 17, WANDA PLAZA, HOUJIE TOWN,
-              DONGGUAN CITY, GUANGDONG, CHINA. <br />
-              BANK NAME : BANK OF CHINA DONGGUAN HOUJIE SUB BRANCH <br />
-              SWIFT CODE: BKCHCNBJ44W <br />
-              BANK ADDRESS: NO 16, TIYU ROAD, HOUJIETOWN, DONGGUAN CITY,
-              GUANGDONG PROVINCE, CHINA.
+              Room 906 , Furun Building ,<br />
+              Fuyong Street , Baoan District , <br />
+              Shenzhen City , Guangdong Province , <br />
+              China <br />
             </p>
           </div>
           <div class="clearfix"></div>
@@ -602,7 +592,7 @@
       $(document).ready(function () {
         // Add smooth scrolling to all links in navbar + footer link
         $(".navbar li a, .footer a[href='#myPage']").on(
-          "click",
+          'click',
           function (event) {
             // Prevent default anchor click behavior
             event.preventDefault();
@@ -612,7 +602,7 @@
 
             // Using jQuery's animate() method to add smooth page scroll
             // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-            $("html, body").animate(
+            $('html, body').animate(
               {
                 scrollTop: $(hash).offset().top,
               },
@@ -626,12 +616,12 @@
         );
 
         $(window).scroll(function () {
-          $(".slideanim").each(function () {
+          $('.slideanim').each(function () {
             var pos = $(this).offset().top;
 
             var winTop = $(window).scrollTop();
             if (pos < winTop + 600) {
-              $(this).addClass("slide");
+              $(this).addClass('slide');
             }
           });
         });
@@ -642,12 +632,12 @@
     <!-- Slideanim-JavaScript -->
     <script type="text/javascript">
       $(window).scroll(function () {
-        $(".slideanim").each(function () {
+        $('.slideanim').each(function () {
           var pos = $(this).offset().top;
 
           var winTop = $(window).scrollTop();
           if (pos < winTop + 600) {
-            $(this).addClass("slide");
+            $(this).addClass('slide');
           }
         });
       });
@@ -658,7 +648,7 @@
     <script src="js/owl.carousel.js"></script>
     <script>
       $(document).ready(function () {
-        $("#owl-demo").owlCarousel({
+        $('#owl-demo').owlCarousel({
           items: 4,
           lazyLoad: true,
           autoPlay: true,
@@ -672,11 +662,11 @@
     <script src="js/responsiveslides.min.js"></script>
     <script>
       $(function () {
-        $("#slider").responsiveSlides({
+        $('#slider').responsiveSlides({
           auto: true,
           nav: true,
           speed: 500,
-          namespace: "callbacks",
+          namespace: 'callbacks',
           pager: true,
         });
       });
@@ -694,7 +684,7 @@
 				easingType: 'linear' 
 			};
 			*/
-        $().UItoTop({ easingType: "easeOutQuart" });
+        $().UItoTop({ easingType: 'easeOutQuart' });
       });
     </script>
     <a href="#" id="toTop" style="display: block">
@@ -707,9 +697,9 @@
     <script type="text/javascript" src="js/easing.js"></script>
     <script type="text/javascript">
       jQuery(document).ready(function ($) {
-        $(".scroll").click(function (event) {
+        $('.scroll').click(function (event) {
           event.preventDefault();
-          $("html,body").animate(
+          $('html,body').animate(
             { scrollTop: $(this.hash).offset().top },
             1000
           );
@@ -725,10 +715,10 @@
         SyntaxHighlighter.all();
       });
       $(window).load(function () {
-        $(".flexslider").flexslider({
-          animation: "slide",
+        $('.flexslider').flexslider({
+          animation: 'slide',
           start: function (slider) {
-            $("body").removeClass("loading");
+            $('body').removeClass('loading');
           },
         });
       });
